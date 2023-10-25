@@ -1,1 +1,109 @@
-a
+/*Borda e border radius pode ser em pixel, já fonte em rem*/
+/*variáveis no css*/
+:root{
+    --gray: #2F2F30;
+    --blue: #176AE5;
+}
+/* Defina a largura máxima e centralize o conteúdo */
+
+body {
+    background-color: #F9EFE4;
+    color: var(--gray);
+    font-family: 'Inter', sans-serif;
+    /*max-width: 1100px;*/
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+
+/* Estilize o cabeçalho (h1) com outra cor, se necessário */
+h1, h4 {
+    color: var(--gray);
+    font-size: 2.2em;
+}
+p, a{
+    font-size: 1.2em;
+    color: var(--gray);
+    text-decoration: none;
+}
+.header-content {
+    display: grid; /*colunas e linhas*/
+    grid-template-columns: 1fr 2fr 1fr; /*cada coluna tem 1 porção exata*/
+    align-items: center;
+    padding: 2rem 4.75rem;
+}
+
+/*deixar mais flexivel
+
+header > nav{
+    display: flex;
+}
+*/
+
+/* Estilize o menu para exibir os itens horizontalmente */
+nav ul {
+    display: flex;
+    list-style: none; /* Remova os marcadores da lista */
+    align-self: center;
+}
+
+/* Estilize os itens da lista (li) para criar espaçamento entre eles */
+nav li {
+    margin-right: 20px; /* Espaçamento horizontal entre os itens do menu */
+}
+
+.orcamento {
+    background-color: transparent; /* Fundo transparente */
+    border: 2px solid var(--gray);; /* Borda com a cor #2F2F30 */
+    color: var(--gray);; /* Cor do texto #2F2F30 */
+    padding: 0.6rem 2rem; /* Espaçamento interno para melhor aparência */
+    border-radius: 2rem; /* Borda arredondada, no lugar de px usar o em 30/15*/
+}
+
+.orcamento:hover {
+    /*background-color: #2F2F30; /* Cor de fundo ao passar o mouse */
+    color: var(--gray);; /* Cor do texto ao passar o mouse */
+    transition: 0.3s; /* Animação suave de transição */
+}
+
+.quero-viajar {
+    background-color: var(--blue); /* Cor de fundo #176AE5 */
+    border: 2px solid var(--blue); /* Borda com a cor #2F2F30 */
+    color: #FFFFFF; /* Cor da fonte branca */
+    padding: 0.6rem 2rem; /* Espaçamento interno para melhor aparência */
+    border-radius: 2rem; /* Borda arredondada */
+}
+
+.quero-viajar:hover {
+    background-color: var(--blue); /* Cor de fundo ao passar o mouse */
+    transition: 0.3s; /* Animação suave de transição */
+}
+
+.hero, .destinos, .depoimentos{
+    text-align: center;
+    padding: 2rem 0rem;
+}
+.form-container {
+    text-align: center; /* Centralizar horizontalmente */
+}
+
+.email-input {
+    display: inline-block; /* Faz com que o campo de entrada de email e o botão fiquem em linha */
+}
+
+input[type="email"] {
+    background-color: transparent;
+    border: 1px solid var(--gray);;
+    color: #98999A;
+    padding: 10px;
+    border-radius: 5px 0 0 5px; /* Borda arredondada à esquerda */
+}
+
+input[type="submit"] {
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0; /* Borda arredondada à direita */
+}
+
