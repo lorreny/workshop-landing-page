@@ -1,5 +1,12 @@
 /*Borda e border radius pode ser em pixel, já fonte em rem*/
 /*variáveis no css*/
+/*Inserir depois
+.botoes {
+    justify-self: center;
+}
+nav {
+    justify-self: end;
+}*/
 :root{
     --gray: #2F2F30;
     --blue: #176AE5;
