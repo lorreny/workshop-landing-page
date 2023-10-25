@@ -1,0 +1,60 @@
+<!--ao colocar a ! (exclamação ele já exibe o padrão do html)-->
+<!-- ctrl+ponto e virgula ; para comentário -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Página Pessoal</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="imagens/logo-lp.png" alt="Minha Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Nacionais</a></li>
+                    <li><a href="#">Internacionais</a></li>
+                    <li><a href="#">Promoções</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Se inscreva</a></li>
+                </ul>
+            </nav>
+            <div class="botoes">
+                <button class="orcamento">Faça um orçamento</button>
+                <button class="quero-viajar">Quero viajar</button>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <h1>Seu sonho está a um clique de distância!</h1>
+        <p>Por aqui, tornamos realidade aquilo que você imaginou.<br> Seja qual for o seu sonho de viagem, estamos aqui para transformá-lo em realidade.</p>
+    
+        <form action="processar_email.php" method="post">
+            <input type="email" id="email" name="email" placeholder="Seu melhor email" required>    
+            <input type="submit" value="Inscrever-se">
+        </form>
+    </section>
+    
+
+    <section class="destinos">
+        <h4>Título Destinos Exclusivos</h4>
+        <p>Explore os destinos mais incríveis do mundo, cuidadosamente selecionados para proporcionar experiências únicas.</p>
+    </section>
+
+    <section class="depoimentos">
+        <h4><strong>200,000+ já realizaram seus sonhos</strong></h4>
+    </section>
+
+    <section class="depoimentos">
+        <h4>E você? Vai ficar de fora?</h4>
+        <p>Clique no botão abaixo e realize seu sonho!</p>
+        <button class="quero-viajar">Quero viajar</button>
+    </section>
+    
+    <!-- Mais seções podem ser adicionadas aqui conforme necessário -->
+</body>
+</html>
